@@ -192,10 +192,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ```
 
 ![Alt text](image-30.png)
-__After I stopped the container, it exited__.
 ![Alt text](image-31.png)
-__After I restart the container again, it is running again__.
-![Alt text](image-32.png)
+![Alt text](image-32.png) __Yes__
 
 7. Stop the container and delete the container. What happened to your helloworld.txt?
 
@@ -210,14 +208,13 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ```
 
 ![Alt text](image-33.png)
-__After I stopped the container, it exits again__.
 ![Alt text](image-34.png)
 __After I deleted the container, file helloworld.txt is gone__.
 
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)*** 
-__No__.
+__No. Container has immutable infrastructure and stateless nature. Changes are not preserved by default when the container stops__.
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
 __Yes__.
 
