@@ -56,8 +56,8 @@ Team Mates:
 ***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu Linux__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __You can choose from a selection of virtual machine types, from 2 cores, 8 GB RAM, and 32 GB storage, up to 32 cores, 64 GB RAM, and 128 GB storage.__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Work will be lost if we don't commit and sync since it is not saved into the main repository when submit the project.__.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __You can choose from a selection of virtual machine types, from 2 cores, 8 GB RAM, and 32 GB storage, up to 32 cores, 64 GB RAM, and 128 GB storage__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Work will be lost if we don't commit and sync since it is not saved into the main repository when submit the project__.
 
 ## Exploring the Terminal
 
@@ -75,286 +75,65 @@ codespace
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command **pwd** . ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
+![Alt text](image-2.png)
 
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ cat /etc/passwd
-root:x:0:0:root:/root:/bin/bash
-daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
-bin:x:2:2:bin:/bin:/usr/sbin/nologin
-sys:x:3:3:sys:/dev:/usr/sbin/nologin
-sync:x:4:65534:sync:/bin:/bin/sync
-games:x:5:60:games:/usr/games:/usr/sbin/nologin
-man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
-lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
-mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
-news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
-uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
-proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
-www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
-backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
-list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
-irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
-gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
-nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
-_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
-systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
-systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
-systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
-messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
-codespace:x:1000:1000::/home/codespace:/bin/bash
-sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+![Alt text](image-3.png)
 
 3. Run the command **df** . ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ df
-Filesystem     1K-blocks     Used Available Use% Mounted on
-overlay         32847680 13636104  17517480  44% /
-tmpfs              65536        0     65536   0% /dev
-shm                65536        0     65536   0% /dev/shm
-/dev/root       30298176 23022800   7258992  77% /vscode
-/dev/loop3      32847680 13636104  17517480  44% /workspaces
-/dev/sda1       46127956      344  43752036   1% /tmp
+![Alt text](image-4.png)
 
 4. Run the command **du** . ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ du
-64      ./.git/hooks
-4       ./.git/branches
-8       ./.git/info
-8       ./.git/objects/ab
-8       ./.git/objects/0b
-8       ./.git/objects/52
-8       ./.git/objects/0d
-8       ./.git/objects/71
-8       ./.git/objects/b2
-12      ./.git/objects/70
-12      ./.git/objects/a4
-8       ./.git/objects/cd
-8       ./.git/objects/4b
-8       ./.git/objects/3f
-8       ./.git/objects/74
-8       ./.git/objects/81
-8       ./.git/objects/49
-1820    ./.git/objects/pack
-8       ./.git/objects/fd
-8       ./.git/objects/04
-12      ./.git/objects/ff
-16      ./.git/objects/72
-12      ./.git/objects/d2
-8       ./.git/objects/93
-8       ./.git/objects/e9
-12      ./.git/objects/2e
-8       ./.git/objects/86
-8       ./.git/objects/cb
-8       ./.git/objects/d8
-4       ./.git/objects/info
-8       ./.git/objects/fe
-12      ./.git/objects/44
-8       ./.git/objects/63
-8       ./.git/objects/91
-8       ./.git/objects/83
-8       ./.git/objects/95
-8       ./.git/objects/a3
-8       ./.git/objects/62
-12      ./.git/objects/3d
-8       ./.git/objects/f2
-12      ./.git/objects/17
-8       ./.git/objects/b9
-8       ./.git/objects/60
-8       ./.git/objects/47
-8       ./.git/objects/fc
-8       ./.git/objects/20
-16      ./.git/objects/fb
-8       ./.git/objects/b6
-8       ./.git/objects/7b
-8       ./.git/objects/0a
-12      ./.git/objects/1c
-8       ./.git/objects/fa
-8       ./.git/objects/4f
-8       ./.git/objects/4a
-12      ./.git/objects/b5
-12      ./.git/objects/64
-12      ./.git/objects/af
-12      ./.git/objects/73
-8       ./.git/objects/e7
-8       ./.git/objects/1b
-12      ./.git/objects/14
-8       ./.git/objects/24
-8       ./.git/objects/f6
-8       ./.git/objects/c6
-8       ./.git/objects/96
-8       ./.git/objects/a6
-8       ./.git/objects/c3
-16      ./.git/objects/58
-2412    ./.git/objects
-4       ./.git/lfs/tmp
-8       ./.git/lfs
-4       ./.git/refs/tags
-12      ./.git/refs/remotes/origin
-16      ./.git/refs/remotes
-8       ./.git/refs/heads
-32      ./.git/refs
-12      ./.git/logs/refs/remotes/origin
-16      ./.git/logs/refs/remotes
-8       ./.git/logs/refs/heads
-28      ./.git/logs/refs
-36      ./.git/logs
-2600    ./.git
-1972    ./images
-4592    .
+![Alt text](image-5.png)
+![Alt text](image-6.png)
+![Alt text](image-7.png)
+![Alt text](image-8.png)
 
 5. Run the command **ls** . ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ ls
-README.md  images
+![Alt text](image-9.png)
 
 6. Run the command **ls -asl** . ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ ls -asl
-total 32
- 4 drwxrwxrwx+ 4 codespace root  4096 Jan 20 16:13 .
- 4 drwxr-xrwx+ 5 codespace root  4096 Jan 20 16:13 ..
- 4 drwxrwxrwx+ 9 codespace root  4096 Jan 21 12:13 .git
-16 -rw-rw-rw-  1 codespace root 15683 Jan 21 12:22 README.md
- 4 drwxrwxrwx+ 2 codespace root  4096 Jan 20 16:13 images
+![Alt text](image-10.png)
 
 7. Run the command **free -h** . ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ free -h
-              total        used        free      shared  buff/cache   available
-Mem:          7.7Gi       1.6Gi       161Mi       1.0Mi       6.0Gi       5.9Gi
-Swap:            0B          0B          0B
+![Alt text](image-11.png)
 
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
-processor       : 0
-vendor_id       : AuthenticAMD
-cpu family      : 25
-model           : 1
-model name      : AMD EPYC 7763 64-Core Processor
-stepping        : 1
-microcode       : 0xffffffff
-cpu MHz         : 2984.635
-cache size      : 512 KB
-physical id     : 0
-siblings        : 2
-core id         : 0
-cpu cores       : 1
-apicid          : 0
-initial apicid  : 0
-fpu             : yes
-fpu_exception   : yes
-cpuid level     : 13
-wp              : yes
-flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
-bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips        : 4890.86
-TLB size        : 2560 4K pages
-clflush size    : 64
-cache_alignment : 64
-address sizes   : 48 bits physical, 48 bits virtual
-power management:
-
-processor       : 1
-vendor_id       : AuthenticAMD
-cpu family      : 25
-model           : 1
-model name      : AMD EPYC 7763 64-Core Processor
-stepping        : 1
-microcode       : 0xffffffff
-cpu MHz         : 2961.450
-cache size      : 512 KB
-physical id     : 0
-siblings        : 2
-core id         : 0
-cpu cores       : 1
-apicid          : 1
-initial apicid  : 1
-fpu             : yes
-fpu_exception   : yes
-cpuid level     : 13
-wp              : yes
-flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
-bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips        : 4890.86
-TLB size        : 2560 4K pages
-clflush size    : 64
-cache_alignment : 64
-address sizes   : 48 bits physical, 48 bits virtual
-power management:
+![Alt text](image-12.png)
+![Alt text](image-13.png)
 
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ top
-processor       : 1
-vendor_id       : AuthenticAMD
-cpu family      : 25
-model           : 1
-model name      : AMD EPYC 7763 64-Core Processor
-stepping        : 1
-microcode       : 0xffffffff
-cpu MHz         : 2961.450
-cache size      : 512 KB
-physical id     : 0
-siblings        : 2
-core id         : 0
-cpu cores       : 1
-apicid          : 1
-initial apicid  : 1
-fpu             : yes
-fpu_exception   : yes
-cpuid level     : 13
-wp              : yes
-flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
-top - 12:25:42 up 41 min,  0 users,  load average: 0.29, 0.29, 0.28
-Tasks:  19 total,   1 running,  18 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  3.7 us,  5.4 sy,  0.0 ni, 90.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7930.0 total,    169.0 free,   1593.0 used,   6168.0 buff/cache
-MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6020.9 avail Mem  
-
+![Alt text](image-14.png)
 ![Alt text](image-1.png)
 
 10. Run the command **uname -a**. ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ uname -a
-Linux codespaces-3c29b6 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+![Alt text](image-15.png)
 
 11. What is the available free memory in the system. ***(1 mark)*** 
-169 MB
+__169 MB__
 
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-overlay          32G   14G   17G  44% /
-tmpfs            64M     0   64M   0% /dev
-shm              64M     0   64M   0% /dev/shm
-/dev/root        29G   22G  7.0G  77% /vscode
-/dev/loop3       32G   14G   17G  44% /workspaces
-/dev/sda1        44G  524K   42G   1% /tmp
+![Alt text](image-16.png)
 
-17 GB
+__17 GB__
 
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
-@2126644 ➜ /workspaces/OSProject (main) $ lsb_release -a
-No LSB modules are available.
-Distributor ID: Ubuntu
-Description:    Ubuntu 20.04.6 LTS
-Release:        20.04
-Codename:       focal
+![Alt text](image-17.png)
 
-Version: 20.04
-
-@2126644 ➜ /workspaces/OSProject (main) $ arch
-x86_64
-
-Hardware architecture: x86_64
+__Version: 20.04__
+__Hardware architecture: x86_64__
 
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-'ls' is the basic command that simply lists the name of the files and directories meanwhile 'ls -asl' is a customized option command that provides a more detailed listing, such as hidden files, sizes in blocks, and additional information about each file.
+__'ls' is the basic command that simply lists the name of the files and directories meanwhile 'ls -asl' is a customized option command that provides a more detailed listing, such as hidden files, sizes in blocks, and additional information about each file__.
 
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
-2560 4K pages
+__2560 4K pages__
 
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
-2961.450
+__2961.450__
 
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-PID 481
+__PID 481__
 
 ## Running your own container instance.
 
@@ -363,6 +142,9 @@ PID 481
 docker pull debian
 docker run --detach -it debian
 ```
+
+![Alt text](image-23.png)
+
 2. This will run the debian container. To check if the debian container is running, type
 ```bash
 @joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
@@ -370,10 +152,14 @@ CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAME
 f65be1987f84   debian    "bash"    4 minutes ago   Up 4 minutes             romantic_jackson
 ```
 
+![Alt text](image-24.png)
+
 3. Keep note of the name used by your container, this is usually given random names unless you specify your own name. Now run a bash command on the container. Make sure you use the name of your container instead of the one shown here. 
 ```bash
 docker exec -i -t romantic_jackson /bin/bash
 ```
+
+![Alt text](image-25.png)
 
 4. Create a file on the container. First you must make sure you are in the bash command prompt of the container. The container is new, and does not have any software other than the debian OS. To create a new file, you will need an editor installed. In the bash shell of the container, run the package manager apt-get to install nano text editor. 
 
@@ -387,7 +173,12 @@ root@f65be1987f84:~# cd /root
 root@f65be1987f84:~# nano helloworld.txt
 ```
 
+![Alt text](image-26.png)
+![Alt text](image-27.png)
+
 5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
+![Alt text](image-28.png)
+![Alt text](image-29.png)
 
 6. Stop the container and run **docker ps -a**, and restart the container again. Is your file in the container still available?
 ```bash 
@@ -399,6 +190,12 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 @joeynor ➜ /workspaces/OSProject (main) $ docker restart romantic_jackson
 ```
+
+![Alt text](image-30.png)
+__After I stopped the container, it exited__.
+![Alt text](image-31.png)
+__After I restart the container again, it is running again__.
+![Alt text](image-32.png)
 
 7. Stop the container and delete the container. What happened to your helloworld.txt?
 
@@ -412,10 +209,17 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 @joeynor ➜ /workspaces/OSProject (main) $ docker rm romantic_jackson
 ```
 
+![Alt text](image-33.png)
+__After I stopped the container, it exits again__.
+![Alt text](image-34.png)
+__After I deleted the container, file helloworld.txt is gone__.
+
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** 
+__No__.
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
+__Yes__.
 
 ## Running your own container with persistent storage
 
